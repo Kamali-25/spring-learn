@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="Kamali" class="com.cts.Employee">
+		<property name="id" value="1"/>
+		<property name="name" value="Kamali"/>
+		<property name="salary" value="30000"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	<bean id="Kelly" class="com.cts.Employee">
+		<property name="id" value="2"/>
+		<property name="name" value="Kelly"/>
+		<property name="salary" value="40000"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	<bean id="Karen" class="com.cts.Employee">
+		<property name="id" value="3"/>
+		<property name="name" value="Karen"/>
+		<property name="salary" value="27500"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	<bean id="Nancy" class="com.cts.Employee">
+		<property name="id" value="4"/>
+		<property name="name" value="Nancy"/>
+		<property name="salary" value="45000"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	<bean id="Kevin" class="com.cts.Employee">
+		<property name="id" value="5"/>
+		<property name="name" value="Kevin"/>
+		<property name="salary" value="20000"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	<bean id="Taylor" class="com.cts.Employee">
+		<property name="id" value="6"/>
+		<property name="name" value="Taylor"/>
+		<property name="salary" value="25000"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	<bean id="Noah" class="com.cts.Employee">
+		<property name="id" value="7"/>
+		<property name="name" value="Noah"/>
+		<property name="salary" value="200000"/>
+		<property name="permanent" value="true"/>
+	</bean>
+	
+	<bean id="employeeList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="Kamali"/>
+				<ref bean="Kelly"/>
+				<ref bean="Karen"/>
+				<ref bean="Nancy"/>
+				<ref bean="Kevin"/>
+				<ref bean="Taylor"/>
+				<ref bean="Noah"/>
+			</list>
+		</constructor-arg>
+	</bean>
+</beans>
